@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    Home
+    <bottom-menu></bottom-menu>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import BottomMenu from "./components/BottomMenu" 
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    "bottom-menu":BottomMenu
+  }
 }
 </script>
 

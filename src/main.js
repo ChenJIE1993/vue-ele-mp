@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import FontAwesome from "./assets/Font-Awesome/css/font-awesome.css"
+import VueResource from "vue-resource"
+
+Vue.use(VueResource);
 
 Vue.config.productionTip = false
 
