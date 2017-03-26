@@ -24,7 +24,7 @@
                             <span>订单</span>
                         </li>
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/my">
                         <li>
                             <img src="../assets/wd.svg" alt="wode">
                             <span>我的</span>

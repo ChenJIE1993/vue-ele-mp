@@ -17,18 +17,17 @@
                 <span>{{weather.description}}</span>
                 <img :src="'https://fuss10.elemecdn.com/'+weather.image_hash+'.png'" alt="duoyun">
             </div>
-            <input type="text" placeholder="搜索商家 商品">
+            <form>
+                <input type="text" placeholder="搜索商家 商品">
+            </form>
+            
             <div class="hotsearch">
                 <ul>
                     <li v-for="h in hot">{{h.word}}</li>
                 </ul>
             </div>
         </header>
-        <div class="mint-swipe">
-            <div class="swipe">
-                <img src="" alt="">
-            </div>
-        </div>
+        
     </div>
 </template>
 
@@ -60,15 +59,15 @@
             getHot(){
                 this.$http.get("/eleapi/shopping/v3/hot_search_words?latitude=31.96205&longitude=118.85778")
                 .then(function(res){
-                    console.log(res)
+                    // console.log(res)
                     this.hot = res.body
                 })
-            }
+            }            
         },
         created(){
             this.getAddres()
             this.getWeather()
-            this.getHot(    )
+            this.getHot()
         }
     }
 </script>
@@ -95,7 +94,7 @@
         position:relative;
     }
     .adsname{
-        position:fixed;
+        /*position:fixed;*/
         margin-left:10px;
         left:50px;
         width:40vw;
@@ -155,16 +154,16 @@
     .hotsearch{
         font-size: 2em;
         color:white;
-        /*border: 1px solid black;*/
+        /*border: 1px solid black; */
     }
     .hotsearch ul{
-        display: flex;
+        display: flex;      
         margin: 0;
-        padding-left:30px;
+        padding-left:10px;
         padding-bottom:10px;
-        /*justify-content: space-left;*/
+        justify-content: space-around;
     }
     .hotsearch ul li{
-        padding: 5px;
+        padding: 10px;
     }
 </style>

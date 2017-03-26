@@ -7,9 +7,11 @@ import FontAwesome from "./assets/Font-Awesome/css/font-awesome.css"
 import VueResource from "vue-resource"
 import jquery from "jquery"
 import VueSwiper from "vue-swiper"
+import AwesomeSwiper from 'vue-awesome-swiper'
 
 Vue.prototype.$ = jquery
 Vue.use(VueResource);
+Vue.use(AwesomeSwiper);
 
 Vue.config.productionTip = false
 
