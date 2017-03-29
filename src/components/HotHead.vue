@@ -21,7 +21,7 @@
                 <input type="text" placeholder="搜索商家 商品">
             </form>
             
-            <div class="hotsearch">
+            <div class="hotsearch" >
                 <ul>
                     <li v-for="h in hot">{{h.word}}</li>
                 </ul>
@@ -36,9 +36,9 @@
         name:"hothead",
         data() {
             return{
-                address:{},
-                weather:{},
-                hot:{}
+                address:[],
+                weather:[],
+                hot:[]
             }
         },
         methods:{
@@ -140,7 +140,7 @@
         float:right;
         position:relative;
         top: -20px;
-        left: -30px;
+        left: -10px;
     }
     input{
         width: calc(100% - 100px);

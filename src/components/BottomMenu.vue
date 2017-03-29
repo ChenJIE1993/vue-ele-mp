@@ -12,13 +12,13 @@
                             <span>外卖</span>
                         </li>
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/discover">
                         <li>
                             <img src="../assets/fx.svg" alt="faxian">
                             <span>发现</span>
                         </li>
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/order">
                         <li>
                             <img src="../assets/dd.svg" alt="dingdan">
                             <span>订单</span>
@@ -51,6 +51,7 @@
         width: 100%;
         height: 70px;
         background-color:#fff;
+        z-index: 100;
     }
     /*.menu{
         margin:15px 0;
