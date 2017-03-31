@@ -157,13 +157,21 @@
         /*border: 1px solid black; */
     }
     .hotsearch ul{
-        display: flex;      
-        margin: 0;
-        padding-left:10px;
-        padding-bottom:10px;
+        display: flex;
         justify-content: space-around;
+        margin: 0;
+        padding:0;
+        margin:0 auto;
+        /*border:1px solid red;*/
+        /*width:500px;*/
+        height:60px;
+        /*overflow-x: scroll;*/
+        /*overflow-y: hidden;*/
     }
     .hotsearch ul li{
-        padding: 10px;
+        /*display: inline-block;*/
+        /*float: left;*/
+        padding: 10px 4px;
+        width: auto;
     }
 </style>
